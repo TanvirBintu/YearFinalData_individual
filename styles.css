@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 97%; /* Container takes full page width */
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 98%; /* Full width table */
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures cells take equal width except for the specified ones */
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 12px;
+  overflow: hidden; /* Ensures long text doesn't overflow */
+  text-overflow: ellipsis;
+}
+
+thead {
+  background-color: #f8f8f8;
+}
+
+/* Adjust the SL and Student columns */
+th:first-child, td:first-child {
+  width: 10px; /* Fixed width for SL column */
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 60px; /* Adjust width for Student column */
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 250px; /* Adjust width for YFTR column */
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 80px; /* Adjust width for Ban column */
+}
+
+th:nth-child(5), td:nth-child(5) {
+  width: 80px; /* Adjust width for Ban column */
+}
+
+th:nth-child(5), td:nth-child(5) {
+  width: 80px; /* Adjust width for Ban column */
+}
+
+th:nth-child(6), td:nth-child(6) {
+  width: 80px; /* Adjust width for Ban column */
+}
+
+th:nth-child(7), td:nth-child(7) {
+  width: 80px; /* Adjust width for Ban column */
+}
+
+th:nth-child(8), td:nth-child(8) {
+  width: 80px; /* Adjust width for Ban column */
+}
+
+th:nth-child(9), td:nth-child(9) {
+  width: 80px; /* Adjust width for Ban column */
+}
+
+.vertical-text {
+  writing-mode: vertical-rl; /* Rotate text vertically */
+  transform: rotate(180deg); /* Flip the text upside-down so it reads top to bottom */
+  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 10px 5px; /* Adjust padding */
+  height: 150px; /* Adjust height for vertical text */
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  th:first-child, td:first-child {
+    width: 40px; /* Reduce SL column width for smaller screens */
+  }
+
+  th:nth-child(2), td:nth-child(2) {
+    width: 150px; /* Adjust Student column width for smaller screens */
+  }
+
+  th, td {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  th:first-child, td:first-child {
+    width: 30px; /* Further reduce SL column width for very small screens */
+  }
+
+  th:nth-child(2), td:nth-child(2) {
+    width: 120px; /* Adjust Student column width for very small screens */
+  }
+
+  th, td {
+    font-size: 9px;
+    padding: 4px;
+  }
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 8px;
+  width: 180px;
+  font-size: 14px;
+}
+
+.controls button {
+  padding: 8px 12px;
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.controls button#printBtn {
+  background-color: #337ab7;
+}
